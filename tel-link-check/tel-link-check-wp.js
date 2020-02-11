@@ -47,7 +47,7 @@ function op_mobile_tel_link_check_wp(callback) {
             callback(
                 buildFailedObject(
                     elements,
-                    getCheckName('op_tel_link_check_pub'),
+                    getCheckName('op_mobile_tel_link_check_wp'),
                     'A link without \'tel:\' was found on the site.'
                 )
             );
