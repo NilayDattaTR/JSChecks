@@ -1,2 +1,2 @@
 # JSChecks
-JS Checks 
+My Checks 
