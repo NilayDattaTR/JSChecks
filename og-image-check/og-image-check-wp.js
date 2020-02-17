@@ -22,7 +22,7 @@ function op_og_image_check_wp(callback) {
                     buildFailedObject(
                         ogImageURL,
                         getCheckName('op_og_image_check_wp'),
-                        "OG Image Check Failed! OG Image is of dimensions " + ogImageWidth + "x" + ogImageHeight + "px"
+                        "OG Image is of dimensions " + ogImageWidth + "x" + ogImageHeight + "px"
                     )
                 );
                 return;
@@ -31,7 +31,7 @@ function op_og_image_check_wp(callback) {
                     buildFailedObject(
                         ogImageURL,
                         getCheckName('op_og_image_check_wp'),
-                        "OG Image Check Failed. OG Image has zero width!"
+                        "OG Image has zero width!"
                     )
                 );
                 return;
@@ -42,7 +42,7 @@ function op_og_image_check_wp(callback) {
                 buildFailedObject(
                     ogImageURL,
                     getCheckName('op_og_image_check_wp'),
-                    "OG Image Check Failed. OG Image is not found!"
+                    "OG Image is not found!"
                 )
             );
             return;
@@ -52,7 +52,7 @@ function op_og_image_check_wp(callback) {
             buildFailedObject(
                 ogImageURL,
                 getCheckName('op_og_image_check_wp'),
-                "OG Image Check Failed. OG Image is not found!"
+                "OG Image is not found!"
             )
         );
         return;
