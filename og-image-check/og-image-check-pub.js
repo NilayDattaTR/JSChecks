@@ -15,15 +15,15 @@ function op_og_image_check_pub(callback) {
 			ogImage.onload = function() {
 				var ogImageWidth = ogImage.width;
 				var ogImageHeight = ogImage.height;
-				if(ogImageWidth > 0 && ogImageWidth == 215 && ogImageHeight > 0 && ogImageHeight == 215) {
+				if(ogImageWidth == 215 && ogImageHeight == 215) {
 					callback(buildPassedObject('n/a', getCheckName('op_og_image_check_pub')));
 					return;
-				} else if (ogImageWidth > 0 && ogImageWidth != 215 && ogImageHeight > 0 && ogImageHeight != 215) {
+				} else if (ogImageWidth == 0 && ogImageHeight == 0) {
 					callback(
 						buildFailedObject(
 							ogImageURL,
 							getCheckName('op_og_image_check_pub'),
-							"OG Image is of dimensions " + ogImageWidth + "x" + ogImageHeight + "px"
+							"OG Image is of zero size."
 						)
 					);
 					return;
@@ -32,7 +32,7 @@ function op_og_image_check_pub(callback) {
 						buildFailedObject(
 							ogImageURL,
 							getCheckName('op_og_image_check_pub'),
-							"OG Image has zero width!"
+							"OG Image is of dimensions " + ogImageWidth + "x" + ogImageHeight + "px."
 						)
 					);
 					return;
@@ -43,7 +43,7 @@ function op_og_image_check_pub(callback) {
 					buildFailedObject(
 						ogImageURL,
 						getCheckName('op_og_image_check_pub'),
-						"OG Image is not found!"
+						"OG Image is not found."
 					)
 				);
 				return;
@@ -53,7 +53,7 @@ function op_og_image_check_pub(callback) {
 				buildFailedObject(
 					ogImageURL,
 					getCheckName('op_og_image_check_pub'),
-					"OG Image is not found!"
+					"No OG Meta Tag is found."
 				)
 			);
 			return;
