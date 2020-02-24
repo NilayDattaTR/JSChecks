@@ -21,6 +21,7 @@ var blogPage = document.querySelector("body.page-blog");
 var postPage = document.querySelector("body.single-post");
 var archivePage = document.querySelector("body.archive");
 var categoryPage = document.querySelector("body.category");
+
 console.log("blogPage: " + blogPage);
 console.log("postPage: " + postPage);
 console.log("archivePage: " + archivePage);
