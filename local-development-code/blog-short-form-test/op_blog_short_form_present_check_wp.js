@@ -25,6 +25,7 @@ console.log("blogPage: " + blogPage);
 console.log("postPage: " + postPage);
 console.log("archivePage: " + archivePage);
 console.log("categoryPage: " + categoryPage);
+
 if(blogPage||postPage||archivePage||categoryPage) {
 	op_blog_short_form_present_check_wp();
 }
