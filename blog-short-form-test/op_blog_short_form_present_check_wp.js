@@ -23,6 +23,6 @@ function op_blog_short_form_present_check_wp(callback) {
 	}
 }
 
-if (pagetype.indexOf('page-blog') > -1 || pagetype.indexOf('single-post') > -1 || pagetype.indexOf('archive') > -1 || pagetype.indexOf('category') > -1) {
+if (pagetype.indexOf('blog-home') > -1 || pagetype.indexOf('blog-post') > -1 || pagetype.indexOf('blog-monthly-archive') > -1 || pagetype.indexOf('blog-category') > -1) {
 	qualityChecks.registerCheck(op_blog_short_form_present_check_wp);
 }
