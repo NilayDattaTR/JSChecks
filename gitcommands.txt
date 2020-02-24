@@ -42,3 +42,13 @@ git push origin master --> Push to remote repo
 
 git remote add <repo_name> <repo_url> --> Add other remote repositories
 
+git config --list --> Lists all credential data
+
+git config --global --list --> Lists user data
+
+git config user.name <new user_name> --> update user_name
+
+git config user.email <new user_email> --> update user_email
+
+git config user.pswd <new user_pswd> --> update user_pswd
+
